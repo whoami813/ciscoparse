@@ -1,7 +1,7 @@
 from re import *
 
-# Filepath = input('Please Enter the Directory of Configuration File:')
-with open(r'C:\Users\ngwailam\Desktop\MO-ASA', "r") as file:
+filepath = input('Please Enter the Directory of Configuration File:')
+with open(filepath, "r") as file:
     reinterface = compile(r"interface\s.*?/\d{1,3}")
     reipadd = compile(r"no\sip\saddress|ip address\s.*\d{1,3}")
     renameif = compile(r"no\snameif|nameif\s\w?")
